@@ -1,0 +1,23 @@
+<div class="im">
+<img src="../../assets/logo.png" height="80px" width="300px">
+</div>
+
+<div class="container">
+    <div style="display: flex;justify-content: space-between;">
+<app-c1 [values]='values'></app-c1>
+<app-c2 [values]='values'></app-c2>
+    </div>
+
+<div style="display: flex;justify-content: center;position: relative; top: 240px;">
+    <input type="text" [(ngModel)]="values">
+</div>
+
+    
+
+    <div style="display: flex;justify-content: space-between;top: 500px; position: relative;">
+
+        <app-c3 [values]='values'></app-c3>
+        <app-c4 [values]='values'></app-c4>
+
+    </div>
+</div>

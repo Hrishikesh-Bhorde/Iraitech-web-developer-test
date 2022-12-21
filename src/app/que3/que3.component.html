@@ -1,0 +1,25 @@
+<div class="im">
+    <img src="../../assets/logo.png" height="80px" width="300px">
+    </div>
+
+
+<div class="container">
+<div *ngFor="let value of values; let i = index"> 
+  <input type="number" [(ngModel)]="value.value" #name="ngModel" name="value{{i}}" class="inp">
+  <button (click)="removevalue(i)" class="btn1">Remove</button>
+</div>
+<br>
+<button (click)="addvalue()" class="btn">Add another phone number</button>
+<br>
+
+<button class="sub">Submit</button>
+
+<h2>Result</h2>
+<div *ngFor="let value of values; let i=index" style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold;">
+    Phone Number {{i+1}}:
+    {{value.value}}
+    <br>
+</div>
+
+
+</div>
